@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "710523477665",
+    "firebase_url": "https://task-management-fc7ac-default-rtdb.firebaseio.com",
+    "project_id": "task-management-fc7ac",
+    "storage_bucket": "task-management-fc7ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710523477665:android:fd8b194854b7616936dae0",
+        "android_client_info": {
+          "package_name": "ATLabProject.example.taskmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710523477665-t3snpd89faf73nkki3nvpr9jtceer3ld.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ATLabProject.example.taskmanagement",
+            "certificate_hash": "8fb174d22c21621f2d58371c3c1a1274fcef29d6"
+          }
+        },
+        {
+          "client_id": "710523477665-jgabt3ufflk0cilvjqqj59hqmacsu1tb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7csPue16vsFUS3MiCx9TxUEBfk5NfGh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710523477665-jgabt3ufflk0cilvjqqj59hqmacsu1tb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

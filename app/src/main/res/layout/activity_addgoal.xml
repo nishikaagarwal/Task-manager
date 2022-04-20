@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F9"
+    android:orientation="vertical"
+    tools:context=".AddGoalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/create_goal_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Create a New Goal"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="normal" />
+
+
+        <EditText
+            android:id="@+id/edit_text_trip_name"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:background="@drawable/editfield"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:hint="Enter your Goal Name"
+            android:inputType="textShortMessage"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+
+        <EditText
+            android:id="@+id/edit_text_trip_desc"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/editfield"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:hint="Enter your Goal Description"
+            android:inputType="textLongMessage"
+            android:isScrollContainer="true"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:scrollbars="horizontal"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_text_trip_desc"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/priority_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Priority :"
+                        android:textColor="#CE7B91"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:typeface="normal" />
+
+                    <soup.neumorphism.NeumorphCardView
+                        style="@style/Widget.Neumorph.CardView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:padding="1dp"
+                        android:textAlignment="center"
+                        app:neumorph_inset="2dp"
+                        app:neumorph_lightSource="rightBottom"
+                        app:neumorph_shadowElevation="1dp"
+                        app:neumorph_shapeType="flat">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <Spinner
+                                android:id="@+id/priority_spinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:backgroundTintMode="src_in"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center"
+                                android:spinnerMode="dropdown"
+                                android:textAlignment="center"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <ImageView
+                                android:id="@+id/spinnerImageView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+
+
+                        </LinearLayout>
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/TG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Goal Target Date : "
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <DatePicker
+                    android:id="@+id/edit_text_trip_date"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:headerBackground="#65A9CD" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/create_trip_submit_butyyon"
+                    android:layout_width="129dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/ripple_blue"
+                    android:text="Create Goal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="19dp" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>

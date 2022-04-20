@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".archive_goal.ArchiveGoalFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/archieve_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4FAFF"
+        android:nestedScrollingEnabled="true">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no2"
+        android:id="@+id/empty_archive_img"
+        android:layout_marginHorizontal="90dp"
+        android:paddingBottom="30dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <com.leo.simplearcloader.SimpleArcLoader
+        android:id="@+id/loader_archive_goal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        custom:arc_margin="3dp"
+        custom:arc_speed="medium"
+        custom:arc_style="simple_arc"></com.leo.simplearcloader.SimpleArcLoader>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/download_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25sp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/dark"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:icon="@drawable/ic_baseline_share_24"
+        app:iconTint="#ffffff" />
+
+
+</RelativeLayout>

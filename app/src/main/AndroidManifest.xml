@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ATLabProject.example.taskmanagement">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AchiveTracker">
+        <activity
+            android:name="ATLabProject.example.taskmanagement.SignInDone"
+            android:exported="false" />
+        <activity
+            android:name="ATLabProject.example.taskmanagement.VerifyOTP"
+            android:exported="false" />
+        <activity
+            android:name="ATLabProject.example.taskmanagement.auth.PhoneNoSignin"
+            android:exported="false" />
+        <activity
+            android:name="ATLabProject.example.taskmanagement.splash.Onboarding"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="ATLabProject.example.taskmanagement.splash.IntroViewPagerAdapter"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name="ATLabProject.example.taskmanagement.alarm.AlarmActivity"
+            android:exported="true" />
+        <activity
+            android:name="ATLabProject.example.taskmanagement.HomeActivity"
+            android:exported="true" />
+        <activity android:name="ATLabProject.example.taskmanagement.ProfileActivity" />
+        <activity android:name="ATLabProject.example.taskmanagement.auth.ForgetpassActivity" />
+        <activity android:name="ATLabProject.example.taskmanagement.auth.SignupActivity" />
+        <activity android:name="ATLabProject.example.taskmanagement.auth.SigninActivity" />
+        <activity android:name="ATLabProject.example.taskmanagement.AddGoalActivity" />
+        <activity
+            android:name="ATLabProject.example.taskmanagement.splash.SplasshActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ATLabProject.example.taskmanagement.auth.RegisterActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ATLabProject.example.taskmanagement.DashboardActivity" />
+
+        <receiver android:name="ATLabProject.example.taskmanagement.alarm.AlarmReceiver" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
