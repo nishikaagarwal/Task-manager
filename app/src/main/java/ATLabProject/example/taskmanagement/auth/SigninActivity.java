@@ -29,7 +29,7 @@ public class SigninActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     EditText email,pass;
-    TextView frgtpass,gotosignup;
+    TextView gotosignup;
     ProgressBar progressBar;
     Button signin;
     boolean passwordVisible;
@@ -69,13 +69,7 @@ public class SigninActivity extends AppCompatActivity {
                 return false;
             }
         });
-        frgtpass.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent1 = new Intent(SigninActivity.this, ForgetpassActivity.class);
-                startActivity(intent1);
-            }
-        });
+
 
         gotosignup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -140,7 +134,6 @@ public class SigninActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         email = findViewById(R.id.loginemail);
         pass = findViewById(R.id.loginpassword);
-        frgtpass = findViewById(R.id.frgtpass);
         signin = findViewById(R.id.signin);
         gotosignup = findViewById(R.id.signuptext);
         progressBar = findViewById(R.id.progressBar2);

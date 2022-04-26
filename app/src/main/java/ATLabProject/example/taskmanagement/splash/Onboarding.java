@@ -53,8 +53,7 @@ public class Onboarding extends AppCompatActivity {
 
         final List<ScreenItem> mList = new ArrayList<>();
         mList.add(new ScreenItem("Track you Goals", "Create Goals with Description", R.drawable.s1));
-        mList.add(new ScreenItem("Set Reminder","Never miss to complete your Goals",R.drawable.s2));
-        mList.add(new ScreenItem("Great Visualization","Integrated with Clean UI",R.drawable.s3));
+
 
         // setup viewpager
         screenPager =findViewById(R.id.screen_viewpager);

@@ -191,9 +191,9 @@ android:layout_height="match_parent">
                 android:layout_marginTop="180dp"
                 android:padding="20dp"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="10dp"
-                app:cardMaxElevation="12dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="8dp"
                 app:cardPreventCornerOverlap="true">
 
                 <RelativeLayout
@@ -376,7 +376,7 @@ android:layout_height="match_parent">
         android:layout_marginTop="180dp"
         android:padding="20dp"
         app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="20dp"
+        app:cardCornerRadius="10dp"
         app:cardElevation="2dp"
         app:cardMaxElevation="12dp"
         app:cardPreventCornerOverlap="true">
@@ -476,10 +476,10 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            app:cardBackgroundColor="#E1F1FF"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="10dp"
-            app:cardMaxElevation="12dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="8dp"
             app:cardPreventCornerOverlap="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -490,8 +490,8 @@ android:layout_height="match_parent">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:orientation="vertical">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -501,7 +501,7 @@ android:layout_height="match_parent">
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="20dp"
                         android:layout_marginLeft="10dp"
                         android:text="Streak Overview"
                         android:textColor="@color/black"
@@ -509,14 +509,14 @@ android:layout_height="match_parent">
                         android:textStyle="bold" />
 
 
-                        <ImageView
-                            android:id="@+id/streakButOV"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/ic_baseline_share_24" />
+                    <ImageView
+                        android:id="@+id/streakButOV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/ic_baseline_share_24" />
 
 
                 </RelativeLayout>
@@ -524,8 +524,8 @@ android:layout_height="match_parent">
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
                     android:layout_margin="8dp"
+                    android:background="@color/white"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="0dp">
 
@@ -675,7 +675,7 @@ android:layout_height="match_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            app:cardBackgroundColor="#E1F1FF"
+            app:cardBackgroundColor="#FFFFFF"
             app:cardCornerRadius="20dp"
             app:cardElevation="10dp"
             app:cardMaxElevation="12dp"
@@ -689,8 +689,8 @@ android:layout_height="match_parent">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:orientation="vertical">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -740,8 +740,8 @@ android:layout_height="match_parent">
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
                     android:layout_margin="8dp"
+                    android:background="@color/white"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="0dp">
 
@@ -765,7 +765,7 @@ android:layout_height="match_parent">
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/streaknotes"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content" />
 
                     </LinearLayout>
 

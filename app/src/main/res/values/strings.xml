@@ -1,16 +1,16 @@
 <resources>
-    <string name="app_name">Tracky </string>
+    <string name="app_name">OnTrack</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="target_date">Target date</string>
     <string name="create_a_reminder"><b>Create a Reminder</b></string>
-    <string name="tracky">Tracky : Track your Goal</string>
-    <string name="visulization">Easy visulization</string>
+    <string name="tracky">Task management: Track your Goals</string>
+    <string name="visulization">Easy visualization</string>
     <string name="create_and_go">Let\'s Create and Go</string>
 
     <string-array name="Sort">
-        <item>A-Z</item>
-        <item>Date Added</item>
         <item>Priority</item>
+        <item>Date Added</item>
+        <item>A-Z</item>
     </string-array>
 </resources>

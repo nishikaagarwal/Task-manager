@@ -19,11 +19,5 @@
         android:title="Ranking"
         app:cnb_iconColor="#FFFFFF"/>
 
-    <item
-        android:id="@+id/nav_settings"
-        android:icon="@drawable/ic_baseline_settings_24"
-        android:title="Settings"
-        app:cnb_iconColor="#FFFFFF"/>
-
 
 </menu>

@@ -89,19 +89,6 @@
         app:layout_constraintTop_toBottomOf="@+id/loginemail"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/frgtpass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="208dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="Forgot Password?"
-        android:textColor="@color/red"
-        android:textSize="15dp"
-        app:layout_constraintStart_toStartOf="@+id/loginpassword"
-        app:layout_constraintTop_toBottomOf="@+id/loginpassword" />
-
     <RelativeLayout
         android:layout_width="256dp"
         android:layout_height="38dp"
@@ -147,18 +134,14 @@
         android:id="@+id/signin"
         android:layout_width="330dp"
         android:layout_height="55dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="80dp"
         android:background="@drawable/ripple_blue"
         android:text="Sign in"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="19dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/frgtpass"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/loginpassword"
-        app:layout_constraintTop_toBottomOf="@+id/frgtpass"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="@+id/loginpassword" />
 
     <ProgressBar
         android:id="@+id/progressBar2"

@@ -52,18 +52,6 @@
 
 
         <ImageView
-            android:id="@+id/phonenosignin"
-            android:layout_width="wrap_content"
-            android:layout_height="55dp"
-            android:layout_marginTop="20dp"
-            android:elevation="2dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:src="@drawable/mc_gsign"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="230dp" />
-
-        <ImageView
             android:id="@+id/emailsignin"
             android:layout_width="wrap_content"
             android:layout_height="55dp"

@@ -176,9 +176,7 @@ public class HomeActivity extends AppCompatActivity {
                             case R.id.nav_new_ranking:
                                 fragment = new RankFragment();
                                 break;
-                            case R.id.nav_settings:
-                                fragment = new SettingsFragment();
-                                break;
+
                         }
                         getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.frag_container_nav,

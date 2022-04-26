@@ -26,12 +26,6 @@
             android:name="ATLabProject.example.taskmanagement.SignInDone"
             android:exported="false" />
         <activity
-            android:name="ATLabProject.example.taskmanagement.VerifyOTP"
-            android:exported="false" />
-        <activity
-            android:name="ATLabProject.example.taskmanagement.auth.PhoneNoSignin"
-            android:exported="false" />
-        <activity
             android:name="ATLabProject.example.taskmanagement.splash.Onboarding"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
@@ -46,7 +40,6 @@
             android:name="ATLabProject.example.taskmanagement.HomeActivity"
             android:exported="true" />
         <activity android:name="ATLabProject.example.taskmanagement.ProfileActivity" />
-        <activity android:name="ATLabProject.example.taskmanagement.auth.ForgetpassActivity" />
         <activity android:name="ATLabProject.example.taskmanagement.auth.SignupActivity" />
         <activity android:name="ATLabProject.example.taskmanagement.auth.SigninActivity" />
         <activity android:name="ATLabProject.example.taskmanagement.AddGoalActivity" />
@@ -69,6 +62,7 @@
             </intent-filter>
         </activity>
         <activity android:name="ATLabProject.example.taskmanagement.DashboardActivity" />
+
 
         <receiver android:name="ATLabProject.example.taskmanagement.alarm.AlarmReceiver" />
 

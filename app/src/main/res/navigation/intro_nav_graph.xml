@@ -10,14 +10,4 @@
         android:name="ATLabProject.example.taskmanagement.appIntro.slider.WelcomeFragment"
         android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome" />
-    <fragment
-        android:id="@+id/visulizationFragment"
-        android:name="ATLabProject.example.taskmanagement.appIntro.slider.VisulizationFragment"
-        android:label="fragment_visulization"
-        tools:layout="@layout/fragment_visulization" />
-    <fragment
-        android:id="@+id/lastStepFragment"
-        android:name="ATLabProject.example.taskmanagement.appIntro.slider.LastStepFragment"
-        android:label="fragment_last_step"
-        tools:layout="@layout/fragment_last_step" />
 </navigation>

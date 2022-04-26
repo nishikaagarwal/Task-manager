@@ -53,20 +53,16 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         gotoGoogle=findViewById(R.id.gotoGoogleBtn);
+        gotoGoogle.setVisibility(View.INVISIBLE);
 
         ImageView emailSignin = findViewById(R.id.emailsignin);
-        ImageView phonenosignin = findViewById(R.id.phonenosignin);
+
+
 
         firestore = FirebaseFirestore.getInstance();
 
         // Intent to Sign in with Phone No Activity
-        phonenosignin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(RegisterActivity.this, PhoneNoSignin.class);
-                startActivity(i);
-            }
-        });
+
         // Intent to Email sign in Activity
         emailSignin.setOnClickListener(new View.OnClickListener() {
             @Override

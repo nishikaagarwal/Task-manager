@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="2dp"
     android:layout_margin="10dp">
 
     <LinearLayout
@@ -17,6 +17,7 @@
             android:id="@+id/notedate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="20.02.2202"
             android:layout_gravity="center_vertical"
             android:textSize="13dp"
@@ -26,6 +27,7 @@
             android:id="@+id/notedata"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="Data"
             android:autoLink="web"
             android:textSize="15dp"

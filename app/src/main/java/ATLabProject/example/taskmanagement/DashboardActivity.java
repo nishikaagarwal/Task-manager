@@ -101,9 +101,12 @@ public class DashboardActivity extends AppCompatActivity {
     private Runnable runnable;
     ImageView extendedFloatingShareButton;
     ImageView extendedFloatingEditButton;
-    ImageView deleteGoal, NewNote, resetGoal;
+    ImageView deleteGoal;
+    ImageView NewNote;
+    ImageView resetGoal;
     ImageButton add_img;
-    ImageView shareCal, Alarm;
+    ImageView shareCal;
+    ImageView Alarm;
     CircleImageView goalPic;
     private String EVENT_DATE_TIME = "null";
     private String DATE_FORMAT = "dd/M/yyyy hh:mm:ss";
@@ -208,7 +211,7 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
-        checkBreak();
+//        checkBreak();
 
         Leave.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -325,6 +328,7 @@ public class DashboardActivity extends AppCompatActivity {
         goalPic = findViewById(R.id.imageIcon);
 
         resetGoal = findViewById(R.id.reset);
+        resetGoal.setVisibility(View.INVISIBLE);
 
         //Streak Overview
         Tdays = findViewById(R.id.totalDays);

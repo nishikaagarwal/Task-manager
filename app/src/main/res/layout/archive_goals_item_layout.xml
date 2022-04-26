@@ -154,7 +154,7 @@
                 android:layout_gravity="bottom"
                 android:indeterminate="false"
                 android:scaleY="4"
-                android:progressTint="#01D86F"
+                android:progressTint="#7CAC74"
                 tools:progress="70" />
 
         </FrameLayout>
